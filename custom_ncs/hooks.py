@@ -124,6 +124,13 @@ app_license = "MIT"
 # 	}
 # }
 
+
+doc_events = {
+    "Purchase Order": {
+        "before_submit": "custom_ncs.purchase_order.check_user_limit"
+    }
+}
+
 # Scheduled Tasks
 # ---------------
 
